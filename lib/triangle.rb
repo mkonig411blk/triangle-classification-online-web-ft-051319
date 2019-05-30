@@ -6,7 +6,7 @@ class Triangle
   end
   
   def kind 
-    if @length == @height == @width
+    if @length == @height && @lenght == @width
       :equilateral
     elsif @length == @height || @height == @width || @width == @length
     :isoceles
