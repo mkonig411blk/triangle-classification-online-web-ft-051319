@@ -4,4 +4,9 @@ class Triangle
     @height = height
     @width = width
   end
+  
+  def kind 
+    if @length == @height == @width
+      :equilateral
+    elsif 
 end
