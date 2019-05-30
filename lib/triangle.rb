@@ -10,12 +10,14 @@ class Triangle
       begin 
       raise TriangleError
       end
-    elsif @length == @height && @length == @width
+    else
+      if @length == @height && @length == @width
       :equilateral
     elsif @length == @height || @height == @width || @width == @length
     :isosceles
   else
     :scalene
+  end
   end
 end
 
