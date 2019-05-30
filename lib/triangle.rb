@@ -6,7 +6,7 @@ class Triangle
   end
   
   def kind 
-    if @length == nil || @width == nil || @height == nil || @length < 0 || @width < 0 || @height < 0
+    if @length == nil || @width == nil || @height == nil || @length =< 0 || @width =< 0 || @height =< 0
       begin 
       raise TriangleError
       rescue TriangleError => error
