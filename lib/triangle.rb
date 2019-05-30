@@ -5,6 +5,8 @@ class Triangle
     @width = width
   end
   
+  def valid?
+    
   def kind 
     if @length == nil || @width == nil || @height == nil || @length <= 0 || @width <= 0 || @height <= 0
       begin 
@@ -14,9 +16,9 @@ class Triangle
       if @length == @height && @length == @width
       :equilateral
     elsif @length == @height || @height == @width || @width == @length
-    :isosceles
+      :isosceles
   else
-    :scalene
+      :scalene
   end
   end
 end
