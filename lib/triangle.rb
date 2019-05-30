@@ -9,8 +9,6 @@ class Triangle
     if @length == nil || @width == nil || @height == nil || @length <= 0 || @width <= 0 || @height <= 0
       begin 
       raise TriangleError
-      rescue TriangleError => error
-          puts error.message
       end
     elsif @length == @height && @length == @width
       :equilateral
