@@ -6,9 +6,11 @@ class Triangle
   end
   
   def valid?
+    @length + @width <= @height || @height + @width <= @length || @height + @width  <= @length
     
+  end
   def kind 
-    if @length == nil || @width == nil || @height == nil || @length <= 0 || @width <= 0 || @height <= 0
+    if @length == nil || @width == nil || @height == nil || @length <= 0 || @width <= 0 || @height <= 0 || valid?
       begin 
       raise TriangleError
       end
