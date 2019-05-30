@@ -9,7 +9,7 @@ class Triangle
     if @length == @height && @length == @width
       :equilateral
     elsif @length == @height || @height == @width || @width == @length
-    :isoceles
+    :isosceles
   else
     :scalene
   end
