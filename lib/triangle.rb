@@ -6,7 +6,7 @@ class Triangle
   end
   
   def kind 
-    if 
+    if @length == nil || @width == nil || @height == nil
     if @length == @height && @length == @width
       :equilateral
     elsif @length == @height || @height == @width || @width == @length
