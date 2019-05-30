@@ -6,7 +6,7 @@ class Triangle
   end
   
   def valid?
-    @length + @width <= @height || @height + @width <= @length || @height + @width  <= @length
+    @length + @width <= @height || @height + @width <= @length || @height + @length  <= @width
     
   end
   def kind 
